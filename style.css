@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(123, 122, 122);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-size: 30px;
+    margin: 0;
+}
+.title{
+    margin-bottom: 30px;
+    font-size: 60px;
+}
+.title-flex,
+.buttons-flex,
+.scores-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scores-flex{
+    flex-direction: column;
+}
+
+.symbols{
+    height: 60px;
+    padding-left: 10px;
+}
+
+ .rock,
+ .paper,
+ .scissors,
+ .move-button{
+    height: 200px;
+    border: none;
+    border-radius: 100px;
+}
+.move-button{
+    margin: 10px;
+}
+
+.reset-button,
+.reset{
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+}
+.reset-button{
+    margin-top: 10px;
+}
+
+.result,
+.moves,
+.results,
+.title{
+    margin: 15px;
+    text-shadow: 1px 7px black;
+}
+.result{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+@media (max-width: 700px){
+    .title{
+        font-size: 30px;
+        flex-shrink: 0;
+    }
+    .symbols{
+        height: 40px;
+    }
+    .rock,
+    .paper,
+    .scissors,
+    .move-button{
+       height: 80px;
+       border: none;
+       border-radius: 40px;
+   }
+   .result{
+    font-size: 30px;
+   }
+   .result,
+    .moves,
+    .results,
+    .title{
+       font-size: 15px;
+        
+    }
+    .reset,
+    .reset-button{
+        height: 35px;
+        border-radius: 5x;
+    }
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock-paper-scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title-flex">
+        <p class="title">Rock Paper Scissors</p>
+        <img class="symbols" src="images/rock-paper-scissors.png" alt="symbols">
+    </div>
+    
+    <div class="buttons-flex">
+        <button class="move-button" onclick="compareMoves('Rock')">
+            <img class="rock" src="images/rock.png" alt="rock">
+        </button>
+    
+        <button class="move-button" onclick="compareMoves('Paper')">
+            <img class="paper" src="images/paper.png" alt="paper">
+        </button>
+    
+        <button class="move-button" onclick="compareMoves('Scissors')">
+            <img class="scissors" src="images/scissors.png" alt="scissors">
+        </button>
+    </div>
+
+    <div class="scores-flex">
+        <p class="js-result result"></p>
+        <p class="js-moves moves"></p>
+        <p class="js-results results"></p>
+        <button class="reset-button" onclick="
+        results.Won = 0;
+        results.Lose = 0;
+        results.Tie = 0;
+        localStorage.removeItem('results')
+        updateResults();
+        "><img class="reset" src="images/reset.png" alt="reset"></button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
